@@ -155,3 +155,5 @@ def delete_record(request, pk):
 
 
     return redirect('dashboard')
+
+
