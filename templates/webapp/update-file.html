@@ -2,11 +2,11 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<h1 class='create-post'>Create Post Page</h1>
+<h1 class='update-post'>Update Post</h1>
 <form method="post" enctype="multipart/form-data">
   {% csrf_token %}
   {{ form|crispy }}
   <br>
-  <button class="btn btn-info" type="submit">Submit New Post</button>
+  <button class="btn btn-info" type="submit" value="Update">Update</button>
 </form>
 {% endblock content %}

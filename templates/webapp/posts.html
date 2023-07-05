@@ -1,11 +1,29 @@
 {% extends 'webapp/base.html' %}
 {% block content %}
 
+<h5>
+  welcome {{user}} this is posts sections 
+</h5>
+
+<hr>
+
+<a href="{% url 'post' %}" class="btn btn-primary btn-sm">add new post
+  <i class="fa fa-plus-circle" aria-hidden="true"></i>
+</a> 
+
+<hr>
+
 <h1>Django Image Uploading</h1>
+
+<hr>
+
 <ul>
   {% for post in object_list %}
     <h2>{{ post.title }}</h2>
     <img src="{{ post.cover.url}}" alt="{{ post.title }}">
+    <a href="{% url 'update' post.pk %}">
+      <button class="btn btn-info" type="button">Update</button>
+    </a>
   {% endfor %}
 </ul>
 
