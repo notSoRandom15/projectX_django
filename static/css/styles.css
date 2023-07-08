@@ -6,3 +6,37 @@
 .message-text{
     color: white;
 }
+
+.checking{
+    color: aqua;
+}
+
+.containers{
+    display: flex;
+  justify-content: center;
+}
+
+.post-containers{
+    border: 2px solid rgba(255, 255, 255, 0.84);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    /* margin-bottom: 50px; */
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgb(241, 243, 245);
+    width: fit-content;
+    justify-content: center;
+}
+
+.image{
+    width: 400;
+    height: auto;
+    display: inline-block;
+}
+
+.update-button{
+}
+
+.post-title{
+    color: black;
+}
