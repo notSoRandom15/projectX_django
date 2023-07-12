@@ -10,6 +10,7 @@ urlpatterns = [
     path('', include('webapp.urls')),
     path('posts/', include('posts.urls')),
     path('cities/', include('cities.urls')),
+    path('apis/v1/', include('apis.urls')),
 ]
 
 

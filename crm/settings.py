@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
+    'rest_framework',
+    'apis',
     
     'webapp',
 
@@ -44,8 +47,15 @@ INSTALLED_APPS = [
 
     'posts',
     'cities',
+    'todos',
 
 ]
+
+REST_FRAMEWORK = {
+     'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+     ]
+}
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
